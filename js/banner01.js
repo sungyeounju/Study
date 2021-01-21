@@ -1,11 +1,12 @@
 $(function(){
-	txt_list_AC();
+    //txt_list_AC();
+    profile_slide_AC();
 });
 
 
 
 function txt_list_AC(){
-	var obj = $(".president_h");//전체
+	var obj = $(".banner");//전체
 		obj.btn = obj.find(" .tab-ul a");//상단탭
 		obj.box = obj.find(" .mid .item");//컨텐츠
 		obj.box.btn = obj.box.find(" .profile_tab a");//컨텐츠안 탭
@@ -57,7 +58,7 @@ function txt_list_AC(){
 
 
 function profile_slide_AC(obj){
-	var obj = obj;
+	var obj = $(".banner");;
 		obj.ul = obj.find(" .list_wrap ul");
 		obj.li = obj.ul.find(">li");
 		obj.btn_prev = obj.find(" .control .prev");
