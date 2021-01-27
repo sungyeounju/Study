@@ -38,3 +38,18 @@ $(function(){
 	});
 
 });
+
+// $(document).ready(function(){
+// 	var obj = $(".banner");;
+// 		obj.ul = obj.find(" .list_wrap ul");
+// 		obj.li = obj.ul.find(">li");
+// 		obj.btn_prev = obj.find(" .control .prev");
+// 		obj.btn_next = obj.find(" .control .next");
+// 	    obj.width = obj.li.width();
+
+	
+// 	obj.btn_next.on("click", function(){
+// 		obj.width.css("left",obj.width+"px");		
+// 	});
+	
+// });

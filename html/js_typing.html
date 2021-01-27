@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Typing Effect</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="/js/jquery-3.5.1.min.js"></script>
+    </head>
+    <body>
+
+        <div class="typing-wrap">
+            <p class="typing-txt"> Hello. Typing Text!!</p> 
+            <p class="typing"></p> 
+        </div>
+ 
+    </body>
+
+    <style>
+        body{height:100vh;}
+        .typing-wrap{width:100%;height:100%;display: flex;}
+        .typing{display: flex;justify-content: center;align-items: center;width: 100%;text-align: center;font-size: 5em;}
+        .typing-txt{display: none;}
+    </style>
+
+    <script>
+        var typingBool = false; 
+        var typingIdx=0; 
+        var typingTxt = $(".typing-txt").text(); // 타이핑될 텍스트를 가져온다 
+        typingTxt=typingTxt.split(""); // 한글자씩 자른다. 
+        if(typingBool==false){ // 타이핑이 진행되지 않았다면 
+        typingBool=true; 
+        
+        var tyInt = setInterval(typing,100); // 반복동작 
+        } 
+        
+        function typing(){ 
+        if(typingIdx<typingTxt.length){ // 타이핑될 텍스트 길이만큼 반복 
+            $(".typing").append(typingTxt[typingIdx]); // 한글자씩 이어준다. 
+            typingIdx++; 
+        } else{ 
+            clearInterval(tyInt); //끝나면 반복종료 
+        } 
+        }  
+    </script>
+</html>
