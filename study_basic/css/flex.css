@@ -1,0 +1,36 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+*{padding:0;margin:0;letter-spacing: -1px;font-family: "Noto Sans KR", sans-serif;box-sizing: border-box;}
+a{text-decoration: none;color:#333;line-height: 1;}
+ul,li{list-style: none;}
+.layout{max-width:1200px;margin:100px auto 200px;}
+
+
+.cont{display:flex;margin:0 0 20px;padding:20px;background:#e4e4e4;}
+
+.cont span,
+.cont div{width:50px;padding:7px 0;background:#333;font-size:30px;text-align:center;border:1px solid #fff;color:#fff;}
+.cont.flexdir{flex-direction: column;}
+.cont.flexwrap{flex-wrap: wrap;width:30%;height:300px;}
+.cont.flexflow{flex-flow:row wrap;width:50%;height:500px;}
+
+.cont.jc{justify-content: space-between;width:60%;}
+.cont.ai{align-items:center;height:200px;}
+.cont.ac{flex-wrap:wrap;align-content:flex-start;width:50%;height:700px;}
+
+.cont .order1{order:1;}
+.cont .order2{order:2;}
+.cont .order3{order:3;}
+.cont .order4{order:4;}
+.cont .order5{order:5;}
+
+
+
+
+
+
+
+
+
+
