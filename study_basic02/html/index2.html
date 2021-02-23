@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>TEST02</title>
+        <link rel="stylesheet" type="text/css" href="../css/basic.css">
+        <link rel="stylesheet" type="text/css" href="../css/text02.css">
+        <!-- <link rel="stylesheet" type="text/css" href="/css/layoutflex.css"> -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+
+        <div class="intro">             
+            <div class="boxitem">
+                <div class="colorbar"></div>
+                <div class="txtbox">
+                    <strong>SMART WEB CONTENTS DECELOPMENT<br>
+                        FULL-STACK DEVELOPER TRAINING<br>
+                        JAVASCRIPT/JQUERY/AJAX TEST    
+                    </strong>
+                </div>
+            </div>
+        </div> <!--intro-->
+
+        <div class="cont cont1"><!--정렬하기 오름차순 내림차순-->
+            <h2>ALIGN</h2>
+            <div class="layout">                
+                <div class="flex form" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="boxitem">
+                        <div class="btnbox">
+                            <button class="ascending btn01">오름차순</button>
+                            <button class="descending btn02">내림차순</button>
+                        </div>
+                        <ul class="userList"></ul>
+                    </div>
+                </div>
+                <div class="flex form" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="boxitem">
+                        <div class="btnbox optionSort">
+                            <button class="btn01" data-age="10">10대이상</button>
+                            <button class="btn02" data-age="20">20대이상</button>
+                            <button class="btn01" data-age="30">30대이상</button>
+                        </div>
+                        <ul class="user_list2"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cont cont2"> <!--내용 출력해서확인-->
+            <div class="layout">
+                <h2>FORM APPLY</h2>
+                <div class="flex form" data-aos="fade-up" data-aos-duration="1000">
+                    <form class="formBox">
+                        <input type="text" id="mytxt" placeholder="텍스트를 입력하세요" class="w50">
+                        <span id="mytxtlog" class="w40"></span>
+
+                        <input type="password" id="mypw" placeholder="비밀번호를 입력하세요" class="w50">
+                        <span id="mypwlog" class="w40"></span>
+
+                        <input type="color" id="mycolor" class="w50">
+                        <span id="myColorlog" class="w40"></span>
+
+                        <select id="mySelect" class="w50">
+                            <option value="00">선택하세요</option>
+                            <option value="apple">apple</option>
+                            <option value="orange">orange</option>
+                            <option value="grape">grape</option>
+                        </select>
+                        <span id="mySelectlog" class="w40"></span>
+        
+                        <select id="myPref" class="w50"></select>
+                        <span id="myPreflog" class="w40"></span>
+        
+                        <input type="file" id="myFile" accept="*" class="w50">
+
+                        <input type="file" id="myPhoto" accept=".png, .jpg" class="w50">
+                        <div class="myPhotolog"><img /></div>
+
+                    </form>
+                </div> <!--flex end-->
+            </div>
+        </div> <!--cont2 end-->
+
+        <div class="cont cont3"> <!--필터적용-->
+            <div class="layout" data-aos="fade-up" data-aos-duration="1000">
+                <h2>FILTER</h2>
+                <div id="buttons"></div>
+                <div id="gallery">
+                    <img src="../images/car/audi03.jpg" data-tags="Audi" alt="사진9">
+                    <img src="../images/car/bmw01.jpg" data-tags="BMW" alt="사진1">
+                    <img src="../images/car/bmw04.jpg" data-tags="BMW" alt="사진3">
+                    <img src="../images/car/bmw05.jpg" data-tags="BMW" alt="사진3">
+                    <img src="../images/car/bmw02.jpg" data-tags="BMW" alt="사진2">
+                    <img src="../images/car/audi01.jpg" data-tags="Audi" alt="사진9">
+                    <img src="../images/car/benz01.jpg" data-tags="Benz" alt="사진6">
+                    <img src="../images/car/bmw03.jpg" data-tags="BMW" alt="사진3">
+                    <img src="../images/car/audi04.jpg" data-tags="Audi" alt="사진9">
+                    <img src="../images/car/benz03.jpg" data-tags="Benz" alt="사진8">
+                    <img src="../images/car/benz04.jpg" data-tags="Benz" alt="사진9">
+                    <img src="../images/car/benz06.jpg" data-tags="Benz" alt="사진9">
+                    <img src="../images/car/benz02.jpg" data-tags="Benz" alt="사진7">
+                    <img src="../images/car/audi02.jpg" data-tags="Audi" alt="사진9">
+                    <img src="../images/car/audi05.jpg" data-tags="Audi" alt="사진9">
+                </div>
+            </div>
+        </div>
+
+        <div class="cont cont4">
+            <div class="layout" data-aos="fade-up" data-aos-duration="1000">
+                <h2>FORM</h2>
+                <div class="flex">
+                    <form id="join" method="post">
+                        <table>
+                            <colgroup>
+                                <col style="width:20%">
+                                <col style="width:80%">
+                            </colgroup>
+                            <tr>
+                                <th>아이디</th>
+                                <td>
+                                    <input type="text" id="id" name="아이디" maxlength="12" class="inputid">
+                                    <span class="txt">* 4-12자의 영문 대소문자와 숫자로만 입력</span>
+                                    <span id="idlog" class="alert"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>비밀번호</th>
+                                <td>
+                                    <input type="password" id="pw" name="비밀번호" maxlength="12" class="inputid">
+                                    <span class="txt">* 8자의 이상의 영문 대소문자와 숫자, 특수기호 입력</span>
+                                    <span id="pwlog" class="alert"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>비밀번호 확인</th>
+                                <td>
+                                    <input type="password" id="checkpw" name="비밀번호" maxlength="12" class="inputid">
+                                    <span id="checkpwlog" class="alert"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>메일주소</th>
+                                <td>
+                                    <input type="text" id="email" class="inputid" name="메일주소">
+                                    <span class="txt">* abcd123@example.com</span>
+                                    <span id="emaillog" class="alert"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>이름</th>
+                                <td>
+                                    <input type="text" id="name" maxlength="12" class="inputid" name="이름">
+                                    <span id="namelog" class="alert"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>주민등록번호</th>
+                                <td>
+                                    <input type="text" id="num1" maxlength="6" class="inputid" name="주민등록번호 앞자리">                                
+                                    <span class="text">-</span>
+                                    <input type="password" id="num2" maxlength="7" class="inputid" name="주민등록번호 뒷자리">
+                                    <span id="numlog" class="alert"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>생일</th>
+                                <td>
+                                    <input type="text" id="years" class="ws" readonly>
+                                    <span class="text">년</span>
+                                    <input type="text" id="month" class="ws" readonly>
+                                    <span class="text">월</span>
+                                    <input type="text" id="day" class="ws" readonly>
+                                    <span class="text">일</span>
+                                </td>
+                            </tr>
+                        </table>                    
+                    </form>                
+                </div><!---flex end-->
+                <button class="apply">확인</button>
+            </div>
+        </div>
+
+        <div class="cont cont5"> <!--ajax 새창연결-->
+            <div class="layout">
+                <h2>BOOK SEARCH</h2>
+                <h3>책 제목을 검색해주세요</h3>
+                <div class="book">
+                    <div class="leftm">
+                        <input type="text" id="bookName" placeholder="책 제목 입력">
+                        <button id="bookSearch">검색</button>
+                    </div>
+                    <div class="rightm">
+                        <div class="result">
+                            <div class="boxitem"></div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="book book2">
+                    <div class="leftm">
+                        <button id="loadTxtBtn">텍스트 파일 로드하기</button>
+                    </div>
+                    <div class="rightm">
+                        <div id="localTxt"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="topbtn">
+            <a href="#n"><i class='bx bxs-up-arrow'></i>TOP</a>
+        </div>
+
+    
+    <script src="../js/jquery-2.2.4.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/text02.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    </body>
+</html>

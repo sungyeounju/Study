@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Slide</title>
+        <link rel="stylesheet" type="text/css" href="../css/jquery.css">
+        <link rel="stylesheet" type="text/css" href="../css/slide.css">
+        <!-- <link rel="stylesheet" type="text/css" href="/css/layoutflex.css"> -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+
+        <header>
+            <div class="logo">
+                <h2>
+                    <a href="ex09_layoutflex2.html">LOGO</a>
+                </h2>
+            </div>
+            <div class="menu-open">
+                <a href="#n" class="openbtn"><i class='bx bx-category-alt'></i></a>
+                <a href="#n" class="closebtn"><i class='bx bx-x'></i></a>
+            </div>
+        </header>
+        <nav>
+            <a href="#n" class="mobileBtn"><i class='bx bx-x'></i></a>
+            <ul class="gnb">
+                <li class="deth01">
+                    <a href="#n" data-hover="1차 메뉴">1차 메뉴</a>
+                    <ul>
+                        <li><a href="">2차메뉴</a></li>
+                        <li><a href="">2차메뉴</a></li>
+                        <li><a href="">2차메뉴</a></li>
+                        <li><a href="">2차메뉴</a></li>
+                        <li><a href="">2차메뉴</a></li>
+                    </ul>
+                </li>
+                <li class="deth01">
+                    <a href="#n">1차 메뉴</a>
+                    <ul>
+                        <li><a href="">2차메뉴</a></li>
+                        <li><a href="">2차메뉴</a></li>
+                        <li><a href="">2차메뉴</a></li>
+                        <li><a href="">2차메뉴</a></li>
+                        <li><a href="">2차메뉴</a></li>
+                    </ul>
+                </li>
+                <li class="deth01">
+                    <a href="#n">1차 메뉴</a>
+                    <ul>
+                        <li><a href="">2차메뉴</a></li>
+                        <li><a href="">2차메뉴</a></li>
+                        <li><a href="">2차메뉴</a></li>
+                        <li><a href="">2차메뉴</a></li>
+                        <li><a href="">2차메뉴</a></li>
+                    </ul>
+                </li>
+                <li class="deth01">
+                    <a href="#n">1차 메뉴</a>
+                    <ul>
+                        <li><a href="">2차메뉴</a></li>
+                        <li><a href="">2차메뉴</a></li>
+                        <li><a href="">2차메뉴</a></li>
+                        <li><a href="">2차메뉴</a></li>
+                        <li><a href="">2차메뉴</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="slide slide03">
+            <h2>Swipe Slider</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="../images/slide/img01.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="../images/slide/img02.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="../images/slide/img03.jpg" alt=""></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+        <div class="slide slide04">
+            <div class="swiper-container">
+                <div class="parallax-bg" data-swiper-parallax="-23%"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="title" data-swiper-parallax="-300">SLIDE 1</div>
+                        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                        <div class="text" data-swiper-parallax="-100">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet
+                                faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem
+                                justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem
+                                at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+                                tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">SLIDE 2</div>
+                        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                        <div class="text" data-swiper-parallax="-100">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet
+                                faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem
+                                justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem
+                                at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+                                tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="title" data-swiper-parallax="-300">SLIDE 3</div>
+                        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                        <div class="text" data-swiper-parallax="-100">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet
+                                faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem
+                                justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem
+                                at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+                                tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-white"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-prev swiper-button-white"></div>
+                <div class="swiper-button-next swiper-button-white"></div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Footer</p>
+            <span>Copyright by Sung. All Rights Reserved.</span>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="../js/jquery.js"></script>
+        <script src="../js/slide.js"></script>
+
+    </body>
+
+</html>

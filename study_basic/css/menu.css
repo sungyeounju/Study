@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+*{letter-spacing: -1px;font-family: "Noto Sans KR", sans-serif;}
+.layout{max-width:1200px;margin:100px auto;}
+a{text-decoration: none;color:#333;padding:0;margin:0;line-height: 1;}
+ul,li{list-style: none;margin:0;padding:0;}
+
+.menuwrap{display:block;height:60px;width:100%;background: #f7fcff;}
+.menu{width:100%;height:100%;max-width:900px;margin:0 auto;font-size:0;text-align: center;}
+.menu .deth01{display: inline-block;width:25%;height:100%;box-sizing: border-box;vertical-align: top;}
+.menu .deth01>a{position: relative; display: block;padding: 20px 0;font-size: 17px;color: #034e73;height: 60px;box-sizing: border-box;font-weight: 500;}
+.menu .deth01>a:before{display:inline-block;position: absolute;left: 50%;bottom: 18px;width:0;height: 7px;background: #215c79;content: '';transition:0.3s ease-in;transform: translate(-50%, 0);opacity: 0.7;}
+.menu .deth01>a:hover:before{width: 25%;}
+.menu .deth01 ul{display:none; padding: 30px 0;background: #215c79;}
+.menu .deth01 ul li a{display:block;padding:15px 0;font-size:15px;color: #fff;transition:0.3s ease-in;}
+.menu .deth01 ul li a:hover{font-weight: 700;}
+
+.menu .deth01:hover ul{display:block;}
+
+
+
+
+.flex{display:flex;justify-content: center;align-items: center;margin-top:100px;}
+.flex li{}
+.flex li a{display:block;padding:20px 50px;background:gray;}
+
+.flex-menu{margin-top:200px;background: #ddd;}
+.flex-menu>ul{position:relative;display:flex;justify-content: center;}
+.flex-menu>ul:before{display: inline-block;position: absolute;left:0;top: 58px;width:100%;height: calc(100% - 58px);background: #9a9a9a;content:'';z-index: 1;}
+.flex-menu .depth01{width:200px;text-align: center;}
+.flex-menu .depth01>a{display:block;padding:20px 0;border-right:1px solid gray;font-size:18px;}
+.flex-menu .depth01:first-child>a{border-left:1px solid gray;}
+.flex-menu .depth01 ul{background: #9a9a9a;position: relative;z-index: 10;}
+.flex-menu .depth01 ul li a{display: block;width:100%;padding:10px;box-sizing: border-box;}
+
+
+.flex-m{position:relative;display:flex;justify-content: center;width:100%;background:#ddd;}
+.flex-m>li{width:200px;height:50px;background:#ddd;text-align:center;}
+.flex-m>li.m4{overflow-y:hidden;position: absolute;left:0;top:40px;display:flex;justify-content:center;align-items:flex-start;width:100%;height:0;transition:0.5s;}
+.flex-m>li.m4 ul{width: 200px;list-style: none;text-align: center;padding: 20px 0 0 0;}
+.flex-m>li:hover ~ li.m4,
+.flex-m>li.m4:hover{height:200px;}
+
+
+
+
+
+

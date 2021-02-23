@@ -1,0 +1,23 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+*{letter-spacing: -1px;font-family: "Noto Sans KR", sans-serif;}
+.layout{max-width:1200px;margin:100px auto;}
+
+
+.box01{overflow:scroll;position: relative;top:20px;width:70%;height:600px;margin:0 auto;margin-bottom:500px;border:1px solid #000;}
+.box01::-webkit-scrollbar{width:8px;background: #a2c7a2;;}
+.box01::-webkit-scrollbar-thumb{background: #2a542a;}
+.box01::-webkit-scrollbar-track{background: #fff;}
+
+.box01 .position01{position: absolute;bottom:20px;right:20px;width:200px;height:200px;border:2px dashed red;background:yellow;border-radius: 50%;text-align: center;}
+.box01 .position02{position: relative;right:20px;top:150px;width:400px;height:200px;border:3px dashed blue;text-align: center;z-index:15;}
+/* .box01 .position06{position: absolute;left:10px;top:10px;right:10px;bottom:10px;background: #000;} */
+.box01 .position03{position: fixed;left:0;bottom:0;width:100%;height:100px;background:linear-gradient(45deg, #008e81, #8BC34A);color:#fff;font-size:65px;font-weight:900;text-align: center;z-index: 20;}
+.box01 .position04{position:sticky;top:0;width:100%;height:100px;background: #41a667;text-align: center;color:#fff;font-size:30px;font-weight:900;z-index: 20;}
+.box01 .position05{position: absolute;left:50%;top:50%;width:30%;height:30%;border:3px solid red;background: black;z-index: 100;transform: translate(-50%,-50%);}
+
+
+
+
+

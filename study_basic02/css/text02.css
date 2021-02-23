@@ -1,0 +1,76 @@
+@charset "UTF-8";
+.layout{margin:0 auto;}
+h2{position: relative;z-index:10;margin-bottom: 50px;font-size:30px;color:#fff;text-align:center;font-weight: 900;}
+button{padding:10px 12px;margin: 5px;background:transparent;outline: none;cursor: pointer;transition:0.3s;color:#fff;border:1px solid #fff;}
+button.on,
+button:hover{border-color: #c72840;}
+
+/* intro */
+.intro{position: relative;z-index: 1; width:100%;height:100vh;background: url(../images/car/bmw06.jpg)center no-repeat;background-size: cover;background-attachment: fixed;}
+.intro .boxitem{position: fixed;width:100%;}
+.intro .boxitem .colorbar{width:100%;height: 250px;background: linear-gradient(-155deg, #bb011d 20%, transparent);}
+.intro .boxitem .txtbox{position: relative;left:10%;top: -80px;width:80%;}
+.intro .boxitem .txtbox strong{color:#fff;font-weight: 900;font-size: 65px;line-height: 1.2;letter-spacing: -3px;}
+
+.cont{position: relative;z-index:1;width:100%;padding:80px 0;background: #fff;}
+.cont .flex{display:flex;justify-content: center;flex-flow: row wrap;margin-bottom:50px;}
+.cont .flex .boxitem{width:500px;padding: 70px 50px;margin: 0 30px;border-radius: 40px;background: linear-gradient(60deg, #03203e, transparent 70%);box-shadow: 0 0 50px rgba(0,0,0,0.3);}
+.cont .flex .btnbox{width:100%;text-align:center;}
+
+.cont .flex ul{margin:20px 0 0;}
+.cont .flex ul li{padding: 15px 0;color:#fff;border-bottom: 1px solid #c72840;}
+.cont .form .formBox{display: flex;flex-flow: row wrap;justify-content: space-between;align-items: center;width:70%;color:#fff;}
+.cont .form .formBox input{min-height:50px;padding:7px;border:none;background:transparent;color:#fff;border-bottom:2px solid #fff;}
+.cont .form .formBox input::placeholder{color:#fff;}
+.cont .form .formBox select{min-height:50px;}
+.cont .form .formBox span{padding:10px;}
+.cont .w50{width:50%;margin:10px 0;}
+.cont .w40{width:40%;}
+
+
+.cont1{background: linear-gradient(45deg, #060708, #001d3e);}
+.cont1 .layout{display:flex;justify-content:center;}
+.cont1 .flex{margin:0 10px;}
+.cont2{background: url(../images/car/bmw07.jpg)center no-repeat;background-size:cover;}
+.cont2:before{display:inline-block;position: absolute;left:0;top:0;width:100%;height:100%;background:#000;content:'';opacity:0.6;}
+.cont2 .flex{position:relative;z-index: 10;}
+.cont2 .myPhotolog{overflow: hidden; width:100%;min-height:400px;position: relative;background:radial-gradient(black, transparent);}
+.cont2 .myPhotolog:before{display:inline-block;position: absolute;left:50%;top:50%;transform: translate(-50%,-50%);content:'이미지를 선택해주세요';color:#fff;}
+.cont2 .myPhotolog img{display:block;position: absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index: 20;}
+.cont3{background: linear-gradient(45deg, #060708, #001d3e);}
+.cont3 #buttons{margin:20px 0;text-align: center;}
+.cont3 #gallery{display:flex;justify-content: flex-start;;flex-flow: row wrap;text-align: center;}
+.cont3 #gallery img{width:300px;height:150px;}
+
+.cont4{display:flex;align-items: center; height:100vh;background: url(../images/car/benz07.jpg)center no-repeat;background-size:cover;}
+.cont4:before{display:inline-block;position: absolute;left:0;top:0;width:100%;height:100%;background:#000;content:'';opacity:0.7;}
+.cont4 .flex{position: relative;z-index: 10;}
+.cont4 .flex #join table{width:100%;border-collapse: collapse;}
+.cont4 .flex #join table th{padding:10px;text-align: right;border-bottom: 1px solid #808080;color:#fff;font-size: 17px;font-weight: 400;}
+.cont4 .flex #join table td{padding: 15px 30px;border-bottom: 1px solid #808080;color:#fff;font-size: 15px;}
+.cont4 .flex #join table td input{padding:7px;background:transparent;border:none;border-bottom:2px solid #fff;color:#fff;}
+.cont4 .flex #join table td .txt{display:inline-block;margin-left:10px;color:#aab7d0;font-size:13px;}
+.cont4 .flex #join table td .text{display:inline-block;margin:0 10px;color:#aab7d0;}
+.cont4 .flex #join table td .ws{width:10%;}
+.cont4 .flex #join table td .alert{display: none;margin-top: 8px;color: rgb(255 20 20);font-size: 14px;}
+.cont4 .flex #join table td .alert.on{display:block;}
+.cont4 .flex #join table td .alert.on:before{position:relative;top: 2px;display:inline-block;margin-right:5px;content:"\ea29";font-family: 'boxicons'!important;font-size: 16px;}
+.cont4 .apply{position: relative; display: block;width:200px;padding:10px 0;margin:0 auto;}
+
+.cont5{margin-bottom:100px;}
+.cont5 h2{color:#000;}
+.cont5 h3{font-size:22px;margin-bottom:30px;padding-bottom:15px;border-bottom:2px solid #ddd;}
+.cont5 .book{width:100%;font-size: 0;}
+.cont5 .book .leftm{display:inline-block;width:50%;vertical-align: top;}
+.cont5 .book .rightm{display:inline-block;width:calc(50% - 20px);margin-left:20px;vertical-align: top;}
+.cont5 .book .rightm .result{border: 3px solid #ddd;padding: 20px;text-align: center;min-height: 200px;}
+.cont5 .book .rightm .result strong{display:block;font-size: 17px;margin-bottom: 10px;}
+.cont5 .book input{width:80%;padding:10px;font-size:17px;border:1px solid #ddd;border-radius: 0;background:transparent;vertical-align: top;}
+.cont5 .book #bookSearch{background:#000;width: calc(20% - 10px);padding: 15px 20px 13px;position: relative;top: -6px;}
+.cont5 .book2{margin-top:10px;}
+.cont5 .book2 #loadTxtBtn{background: #000;font-size: 14px;width: 100%;margin: 0;}
+.cont5 .book2 #localTxt{font-size:14px;border: 3px solid #ddd;padding: 20px;}
+
+.topbtn{position: fixed;right: 5%;bottom: 5%;z-index: 10;}
+.topbtn a{display: block;color:#fff;background: rgba(0,0,0,0.3);padding: 10px;border-radius: 50%;text-align: center;width: 50px;height: 50px;font-size: 14px;}
+.topbtn a i{display:block;font-size: 11px;margin-bottom: 5px;}

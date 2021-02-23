@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Task List</title>
+        <link rel="stylesheet" type="text/css" href="../css/task.css">
+        <!-- <link rel="stylesheet" type="text/css" href="/css/layoutflex.css"> -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+
+        <div class="bg">
+            <div class="task">
+                <h1 class="txtCenter">
+                    <span class="task-tit">TASK LIST</span>
+                    <span id="counter"></span>
+                </h1>
+                <ul>
+                    <li>출근하기</li>
+                    <li>오전수업</li>
+                    <li>점심식사</li>
+                    <li>오후수업</li>
+                </ul>
+                <form id="newTaskForm" action="">
+                    <input type="text" id="taskDescription" placeholder="할 일을 입력하세요." />
+                    <input type="submit" id="addButton" value="추가" />
+                </form>
+            </div>
+        </div>
+        
+
+        
+
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+        <script src="../js/task.js"></script>
+
+    </body>
+
+</html>

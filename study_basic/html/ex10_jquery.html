@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Tab/Accordion</title>
+        <link rel="stylesheet" type="text/css" href="../css/jquery.css">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+
+
+        <div class="layout">
+
+            <h2>탭가로형</h2>
+            <div class="tab-box">
+                <ul class="nav-tab">
+                    <li data-id="con01" class="on"><a href="#n">btn01</a></li>
+                    <li data-id="con02"><a href="#n">btn02</a></li>
+                    <li data-id="con03"><a href="#n">btn03</a></li>
+                </ul>
+                <div id="con01" class="conbox on">
+                    <p>con01</p>
+                    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                </div>
+                <div id="con02" class="conbox">
+                    <p>con02</p>
+                </div>
+                <div id="con03" class="conbox">
+                    <p>con03</p>
+                </div>
+            </div>
+
+            <h2>탭세로형</h2>
+            <div class="tab-box tab-boxv">
+                <ul class="nav-tab">
+                    <li data-id="cont01" class="on"><a href="#n">btn01</a></li>
+                    <li data-id="cont02"><a href="#n">btn02</a></li>
+                    <li data-id="cont03"><a href="#n">btn03</a></li>
+                </ul>
+                <div id="cont01" class="conbox on">
+                    <p>cont01</p>
+                    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                </div>
+                <div id="cont02" class="conbox">
+                    <p>cont02</p>
+                </div>
+                <div id="cont03" class="conbox">
+                    <p>cont03</p>
+                </div>
+            </div>
+
+            <h2>아코디언</h2>
+            <div class="acco">
+                <ul>
+                    <li>
+                        <a href="#n" class="acbtn">btn01</a>
+                        <div class="acbox">
+                            <p>box01</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#n" class="acbtn">btn02</a>
+                        <div class="acbox">
+                            <p>box02</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#n" class="acbtn">btn03</a>
+                        <div class="acbox">
+                            <p>box03</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <h2>아코디언 탭</h2>
+            <div class="acco2">
+                <ul>
+                    <li>
+                        <div class="title">
+                            <span class="txt">Q. Step 01</span>
+                            <span class="arrow"><i class='bx bx-down-arrow-alt' ></i></span>
+                        </div>
+                        <div class="cont">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet
+                                faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem
+                                justo. Integer laoreet magnanec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem
+                                justo. Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem
+                                at elit facilisis rutrum. Ut at ullamcorp nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem
+                                at elit facilisis rutrum. Ut at ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+                                tincidunt ut libero. Aenean feugiat non eros quis feugiat.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <span class="txt">Q. Step 02</span>
+                            <span class="arrow"><i class='bx bx-down-arrow-alt' ></i></span>
+                        </div>
+                        <div class="cont">step02</div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <span class="txt">Q. Step 03</span>
+                            <span class="arrow"><i class='bx bx-down-arrow-alt' ></i></span>
+                        </div>
+                        <div class="cont">step03</div>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+
+        <!-- <script src="/js/jquery-1.12.4.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script src="../js/jquery.js"></script>
+
+    </body>
+
+</html>
